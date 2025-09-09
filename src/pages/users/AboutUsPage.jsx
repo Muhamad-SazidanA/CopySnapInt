@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scan, ArrowRight } from 'lucide-react';
+import { Scan, ArrowRight, Info } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 // About Us redesigned to match provided reference and copy
@@ -7,24 +7,35 @@ export default function AboutUsPage() {
     const navigate = useNavigate();
 
     return (
-        <div className="bg-white text-   gray-900">
+        <div className="bg-white text-gray-900 font-inter">
             {/* Top: What we do (single-column, descriptions below heading) */}
-            <section className="py-20 sm:py-24">
-                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900">
-                        What we do
-                    </h1>
-                    <div className="mt-5 h-1.5 w-64 max-w-full rounded-full bg-gradient-to-r from-primary-700 to-transparent" />
-                    <div className="mt-8 space-y-6 text-slate-700 text-lg leading-relaxed">
-                        <p>
-                            Di Snapint, kami menyediakan platform IDP berbasis AI yang mengotomatiskan pengolahan dokumen dan alur ekstraksi data—membantu bisnis mempercepat operasional dan menghilangkan pekerjaan manual. Kami menggunakan teknologi OCR canggih dan deep learning untuk menangani berbagai dokumen: invoice, kuitansi, purchase order, kontrak, klaim, serta formulir—mengubahnya menjadi data terstruktur dan siap digunakan.
-                        </p>
-                        <h3 className="text-sm font-semibold tracking-widest uppercase text-primary-700">Dipercaya oleh Perusahaan Indonesia & Global</h3>
-                        <p>
-                            Snapint dirancang fleksibel untuk berbagai skala: dari usaha kecil, menengah, hingga enterprise. Solusi intuitif dan dapat dikustom membuat integrasi ke sistem yang sudah ada melalui API menjadi seamless—mengurangi beban kerja manual hingga 90%, serta meningkatkan akurasi, kecepatan, dan efisiensi biaya hingga 50%.
-                        </p>
+            <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+
+                {/* Announcement Badge */}
+                <div className='text-center'>
+                    <div className="inline-flex items-center  mb-12 px-6 py-3 text-sm bg-blue-50 text-gray-700 rounded-lg">
+                        <Info className="w-4 h-4 mr-2 font-bold" />
+                        <span className="font-semibold">Tentang Snapint — Platform AI Otomasi Dokumen</span>
                     </div>
                 </div>
+
+                {/* Main Headline */}
+                <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
+                    <span className="relative">
+                        What we do
+                        <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary-700 to-transparent rounded-full"></div>
+                    </span>
+                </h1>
+                <div className="mt-8 space-y-6 text-slate-700 text-lg leading-relaxed">
+                    <p>
+                        Di Snapint, kami menyediakan platform IDP berbasis AI yang mengotomatiskan pengolahan dokumen dan alur ekstraksi data—membantu bisnis mempercepat operasional dan menghilangkan pekerjaan manual. Kami menggunakan teknologi OCR canggih dan deep learning untuk menangani berbagai dokumen: invoice, kuitansi, purchase order, kontrak, klaim, serta formulir—mengubahnya menjadi data terstruktur dan siap digunakan.
+                    </p>
+                    <h3 className="text-sm font-semibold tracking-widest uppercase text-primary-700">Dipercaya oleh Perusahaan Indonesia & Global</h3>
+                    <p>
+                        Snapint dirancang fleksibel untuk berbagai skala: dari usaha kecil, menengah, hingga enterprise. Solusi intuitif dan dapat dikustom membuat integrasi ke sistem yang sudah ada melalui API menjadi seamless—mengurangi beban kerja manual hingga 90%, serta meningkatkan akurasi, kecepatan, dan efisiensi biaya hingga 50%.
+                    </p>
+                </div>
+
             </section>
 
             {/* Vision banner (match site primary palette) */}

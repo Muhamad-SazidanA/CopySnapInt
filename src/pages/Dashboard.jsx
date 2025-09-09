@@ -936,7 +936,6 @@ export default function Dashboard() {
               <Star className="w-4 h-4 mr-2 font-bold" />
               <span className="font-semibold">Teknologi AI Terdepan untuk Pemrosesan Dokumen Tanpa Template</span>
             </div>
-
             {/* Main Headline */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-tight">
               Ubah Setiap Dokumen Menjadi{' '}

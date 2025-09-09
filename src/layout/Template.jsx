@@ -43,7 +43,7 @@ export default function Template() {
     };
 
     return (
-        <div className="flex flex-col bg-gray-50 text-gray-900">
+        <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
             {/* Floating WhatsApp Button */}
             <a
                 href="https://wa.me/628973923000"
@@ -60,7 +60,7 @@ export default function Template() {
 
             {/* Header */}
             <header className="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50 shadow-sm supports-[backdrop-filter]:bg-white/90">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="relative grid grid-cols-[auto_1fr_auto] items-center h-16">
                         {/* Logo */}
                         <div className="flex-shrink-0">
@@ -392,12 +392,12 @@ export default function Template() {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-700/20 via-transparent to-transparent"></div>
 
                 {/* Main Footer Content */}
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 z-10">
+                <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-6 z-10">
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         {/* Company Info */}
                         <div className="lg:col-span-1">
                             {/* Logo */}
-                            <div className="flex-shrink-0 space-y-4 mb-2">
+                            <div className="flex-shrink-0 space-y-4 mb-3">
                                 <div
                                     className="flex items-center space-x-2 group cursor-pointer"
                                     onClick={handleLogoClick}
@@ -449,7 +449,7 @@ export default function Template() {
                         </div>
 
                         {/* Footer Links aligned with Header */}
-                        <div className="md:col-span-2 lg:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-40 justify-self-end max-w-2xl">
+                        <div className="md:col-span-2 lg:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-20 justify-self-end max-w-2xl">
                             {/* Navigation (matches header top-level) */}
                             <div>
                                 <h4 className="text-sm font-semibold uppercase tracking-normal text-slate-100 mb-3">Navigasi</h4>
@@ -487,7 +487,7 @@ export default function Template() {
 
                             {/* CTA */}
                             <div>
-                                <h4 className="text-sm font-semibold uppercase tracking-normal text-slate-100 mb-3">Aksi</h4>
+                                <h4 className="text-sm font-semibold uppercase tracking-normal text-slate-100 mb-3">OTHER</h4>
                                 <ul className="space-y-2.5">
                                     <li>
                                         <a href="/demo" className="text-sm text-slate-300 hover:text-white transition-colors duration-150 hover:translate-x-0.5 inline-flex items-center">Request Demo</a>
@@ -497,63 +497,10 @@ export default function Template() {
                         </div>
                     </div>
 
-                    {/* Newsletter Signup */}
-                    <div className="mt-12 pt-8 border-t border-slate-700/80">
-                        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
-                            <div>
-                                <h4 className="font-semibold mb-2">Tetap Update</h4>
-                                <p className="text-sm text-slate-300">
-                                    Dapatkan insights terbaru tentang AI document processing dan automasi bisnis.
-                                </p>
-                            </div>
-                            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 w-full sm:w-auto">
-                                <input
-                                    type="email"
-                                    placeholder="Masukkan email Anda"
-                                    className="px-4 py-2 rounded-lg bg-slate-700/80 border border-slate-600 text-white placeholder-slate-400 text-sm min-w-64 focus:outline-none focus:ring-2 focus:ring-white/20"
-                                />
-                                <button className="px-6 py-2 rounded-lg bg-white text-slate-800 hover:bg-slate-100 text-sm font-medium flex items-center transition-colors">
-                                    <FaPaperPlane className="w-4 h-4 mr-2" />
-                                    Subscribe
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Bottom Footer */}
-                <div className="border-t border-slate-700">
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
-                            {/* Compliance Badges */}
-                            <div className="flex flex-wrap items-center gap-4">
-                                <div className="flex items-center space-x-2 text-xs text-slate-300">
-                                    <FaShieldAlt className="w-4 h-4" />
-                                    <span>ISO 27001</span>
-                                </div>
-                                <div className="flex items-center space-x-2 text-xs text-slate-300">
-                                    <FaGlobe className="w-4 h-4" />
-                                    <span>GDPR Compliant</span>
-                                </div>
-                                <div className="flex items-center space-x-2 text-xs text-slate-300">
-                                    <FaFileAlt className="w-4 h-4" />
-                                    <span>SOC 2 Type II</span>
-                                </div>
-                                <div className="flex items-center space-x-2 text-xs text-slate-300">
-                                    <FaBuilding className="w-4 h-4" />
-                                    <span>Data Lokalisasi</span>
-                                </div>
-                            </div>
-
-                            {/* Legal Links */}
-                            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-slate-300">
-                                <a href="#" className="hover:text-white transition-colors">Kebijakan Privasi</a>
-                                <span className="opacity-30">•</span>
-                                <a href="#" className="hover:text-white transition-colors">Syarat & Ketentuan</a>
-                                <span className="opacity-30">•</span>
-                                <a href="#" className="hover:text-white transition-colors">Kebijakan Cookie</a>
-                                <span className="opacity-30 hidden lg:inline">•</span>
-                                <span>© 2024 snapint. Hak cipta dilindungi.</span>
+                    <div className="border-t border-slate-700 mt-6 pt-4">
+                        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+                            <div className="text-right text-xs text-slate-300">
+                                <span>©2025 Snapint. Hak cipta dilindungi.</span>
                             </div>
                         </div>
                     </div>
