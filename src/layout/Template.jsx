@@ -452,7 +452,7 @@ export default function Template() {
                         <div className="md:col-span-2 lg:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-20 justify-self-end max-w-2xl">
                             {/* Navigation (matches header top-level) */}
                             <div>
-                                <h4 className="text-sm font-semibold uppercase tracking-normal text-slate-100 mb-3">Navigasi</h4>
+                                <h4 className="text-sm font-bold uppercase tracking-normal text-slate-100 mb-3">Navigasi</h4>
                                 <ul className="space-y-2.5">
                                     <li>
                                         <a href="/" className="text-sm text-slate-300 hover:text-white transition-colors duration-150 hover:translate-x-0.5 inline-flex items-center">Home</a>
@@ -471,7 +471,7 @@ export default function Template() {
 
                             {/* Solusi (same as header dropdown) */}
                             <div>
-                                <h4 className="text-sm font-semibold uppercase tracking-normal text-slate-100 mb-3">Solusi</h4>
+                                <h4 className="text-sm font-bold uppercase tracking-normal text-slate-100 mb-3">Solusi</h4>
                                 <ul className="space-y-2.5">
                                     <li>
                                         <a href="/solusi/finance" className="text-sm text-slate-300 hover:text-white transition-colors duration-150 hover:translate-x-0.5 inline-flex items-center">Finance</a>
@@ -487,7 +487,7 @@ export default function Template() {
 
                             {/* CTA */}
                             <div>
-                                <h4 className="text-sm font-semibold uppercase tracking-normal text-slate-100 mb-3">OTHER</h4>
+                                <h4 className="text-sm font-bold uppercase tracking-normal text-slate-100 mb-3">OTHER</h4>
                                 <ul className="space-y-2.5">
                                     <li>
                                         <a href="/demo" className="text-sm text-slate-300 hover:text-white transition-colors duration-150 hover:translate-x-0.5 inline-flex items-center">Request Demo</a>

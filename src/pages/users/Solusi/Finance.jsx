@@ -183,8 +183,8 @@ export default function Finance() {
             {/* CTA Section */}
             <section className="py-16">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 font-inter">
-                    <div className="mt-4 text-center bg-gradient-to-r from-primary-50 to-primary-100 rounded-3xl p-10 sm:p-12 md:p-16">
-                        <Scan className="w-12 h-12 sm:w-16 sm:h-16 text-primary-800 mx-auto mb-6" />
+                    <div className="mt-4 text-center bg-gradient-to-r from-primary-50 to-primary-100 rounded-3xl p-10 sm:p-16 min-h-[20rem] flex flex-col items-center justify-center">
+                        <Scan className="w-16 h-16 text-primary-800 mx-auto mb-6" />
                         <h3 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 text-gray-900">Siap Mulai Transformasi Digital?</h3>
                         <p className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 max-w-3xl mx-auto">
                             Bergabunglah dengan ribuan perusahaan yang telah mempercayakan pemrosesan dokumen mereka kepada platform AI kami

@@ -175,8 +175,8 @@ export default function CaseStudiesPage() {
                 {/* CTA Section */}
                 <section className="py-12 sm:py-16">
                     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="text-center bg-gradient-to-r from-primary-50 to-primary-100 rounded-3xl p-10 sm:p-16">
-                            <Scan className="w-14 h-14 sm:w-16 sm:h-16 text-primary-800 mx-auto mb-6" />
+                        <div className="text-center bg-gradient-to-r from-primary-50 to-primary-100 rounded-3xl p-10 sm:p-16 min-h-[20rem] flex flex-col items-center justify-center">
+                            <Scan className="w-16 h-16 text-primary-800 mx-auto mb-6" />
                             <h3 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 text-gray-900">
                                 Siap Mulai Transformasi Digital?
                             </h3>
@@ -185,11 +185,11 @@ export default function CaseStudiesPage() {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 justify-center">
                                 <button
-                                    className="px-8 sm:px-10 py-3 text-base sm:text-lg bg-primary-800 hover:bg-primary-900 text-white rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center shadow-lg"
+                                    className="px-10 py-3 text-lg bg-primary-800 hover:bg-primary-900 text-white rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center shadow-lg"
                                     onClick={handleDemoClick}
                                 >
                                     Jadwalkan Demo
-                                    <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 ml-3" />
+                                    <ArrowRight className="w-6 h-6 ml-3" />
                                 </button>
                             </div>
                         </div>

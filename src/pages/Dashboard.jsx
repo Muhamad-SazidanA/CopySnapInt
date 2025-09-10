@@ -1106,7 +1106,7 @@ export default function Dashboard() {
       </section>
 
       {/* Platform Section */}
-      <section id="platform" className="py-24 bg-white">
+      <section id="platform" className="py-18 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-20">
@@ -1135,7 +1135,7 @@ export default function Dashboard() {
                       : 'text-gray-600 hover:text-primary-800'
                       }`}
                   >
-          <div className={`w-8 h-8 ${activeTab === feature.id ? 'text-primary-800' : 'text-gray-500'}`}>
+                    <div className={`w-8 h-8 ${activeTab === feature.id ? 'text-primary-800' : 'text-gray-500'}`}>
                       {feature.icon}
                     </div>
                     <span className="text-center font-medium">{feature.title}</span>
@@ -1147,7 +1147,7 @@ export default function Dashboard() {
             {platformFeatures.map((feature) => (
               <div
                 key={feature.id}
-        className={activeTab === feature.id ? 'block' : 'hidden'}
+                className={activeTab === feature.id ? 'block' : 'hidden'}
               >
                 <div className="p-8 border-2 border-gray-200 rounded-3xl hover:border-primary-300 transition-colors duration-300 bg-white shadow-lg">
                   <div className="grid grid-cols-1 xl:grid-cols-3 gap-12">
@@ -1197,20 +1197,23 @@ export default function Dashboard() {
               </div>
             ))}
           </div>
-
-          {/* CTA Section */}
-          <div className="text-center bg-gradient-to-r from-primary-50 to-primary-100 rounded-3xl p-16">
+        </div >
+      </section>
+      {/* Reused CTA from Home */}
+      <section className="pb-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center bg-gradient-to-r from-primary-50 to-primary-100 rounded-3xl p-10 sm:p-16 min-h-[20rem] flex flex-col items-center justify-center">
             <Scan className="w-16 h-16 text-primary-800 mx-auto mb-6" />
-            <h3 className="text-3xl font-semibold mb-6 text-gray-900">
+            <h3 className="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-6 text-gray-900">
               Siap Mulai Transformasi Digital?
             </h3>
-            <p className="text-lg text-gray-600 mb-10 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 max-w-3xl mx-auto">
               Bergabunglah dengan ribuan perusahaan yang telah mempercayakan pemrosesan dokumen mereka kepada platform AI kami
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 justify-center">
               <button
                 className="px-10 py-3 text-lg bg-primary-800 hover:bg-primary-900 text-white rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center shadow-lg"
-                onClick={handleDemoClick}
+                onClick={() => navigate('/demo')}
               >
                 Jadwalkan Demo
                 <ArrowRight className="w-6 h-6 ml-3" />
