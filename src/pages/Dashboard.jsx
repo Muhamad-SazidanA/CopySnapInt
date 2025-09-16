@@ -1011,7 +1011,7 @@ export default function Dashboard() {
                 className="px-8 py-3 text-lg bg-primary-800 text-white hover:bg-primary-900 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center shadow-lg"
                 onClick={handleGetStartedClick}
               >
-                Mulai Uji Coba Gratis
+                Jadwalkan Demo
                 <ArrowRight className="w-5 h-5 ml-2" />
               </button>
             </div>
@@ -1213,7 +1213,7 @@ export default function Dashboard() {
             <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 justify-center">
               <button
                 className="px-10 py-3 text-lg bg-primary-800 hover:bg-primary-900 text-white rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center shadow-lg"
-                onClick={() => navigate('/demo')}
+                onClick={() => handleNavigation('/demo')}
               >
                 Jadwalkan Demo
                 <ArrowRight className="w-6 h-6 ml-3" />

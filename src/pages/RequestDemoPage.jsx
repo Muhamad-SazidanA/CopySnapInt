@@ -200,22 +200,22 @@ export default function RequestDemoPage() {
                                 </h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="md:col-span-1">
-                                        <label className="block text-sm font-medium mb-1" htmlFor="name">Name *</label>
+                                        <label className="block text-sm font-medium mb-1" htmlFor="name">Name<span className="text-red-600">*</span></label>
                                         <input id="name" name="name" className="w-full h-11 rounded-xl border px-3 focus:outline-none border-slate-300" placeholder="Nama lengkap" value={form.name} onChange={handleChange} />
                                         {errors.name && <div className="text-red-500 text-xs mt-1">{errors.name}</div>}
                                     </div>
                                     <div className="md:col-span-1">
-                                        <label className="block text-sm font-medium mb-1" htmlFor="email">Company Email *</label>
+                                        <label className="block text-sm font-medium mb-1" htmlFor="email">Company Email<span className="text-red-600">*</span></label>
                                         <input id="email" name="email" type="email" className="w-full h-11 rounded-xl border px-3 focus:outline-none border-slate-300" placeholder="nama@perusahaan.com" value={form.email} onChange={handleChange} />
                                         {errors.email && <div className="text-red-500 text-xs mt-1">{errors.email}</div>}
                                     </div>
                                     <div className="md:col-span-1">
-                                        <label className="block text-sm font-medium mb-1" htmlFor="company">Company Name *</label>
+                                        <label className="block text-sm font-medium mb-1" htmlFor="company">Company Name<span className="text-red-600">*</span></label>
                                         <input id="company" name="company" className="w-full h-11 rounded-xl border px-3 focus:outline-none border-slate-300" placeholder="PT. Contoh Teknologi" value={form.company} onChange={handleChange} />
                                         {errors.company && <div className="text-red-500 text-xs mt-1">{errors.company}</div>}
                                     </div>
                                     <div className="md:col-span-1">
-                                        <label className="block text-sm font-medium mb-1" htmlFor="phone">Phone Number *</label>
+                                        <label className="block text-sm font-medium mb-1" htmlFor="phone">Phone Number<span className="text-red-600">*</span></label>
                                         <input id="phone" name="phone" type="tel" className="w-full h-11 rounded-xl border px-3 focus:outline-none border-slate-300" placeholder="+62 812 3456 7890" value={form.phone} onChange={handleChange} />
                                         {errors.phone && <div className="text-red-500 text-xs mt-1">{errors.phone}</div>}
                                     </div>
@@ -228,15 +228,15 @@ export default function RequestDemoPage() {
                             </section>
 
                             {/* Message */}
-                            <section className="pt-3">
-                                <label className="block text-sm font-medium mb-1" htmlFor="message">Message *</label>
+                            <section>
+                                <label className="block text-sm font-medium mb-1" htmlFor="message">Message<span className="text-red-600">*</span></label>
                                 <textarea id="message" name="message" rows="4" className="w-full rounded-xl border px-3 py-2 focus:outline-none border-slate-300" placeholder="Ceritakan kebutuhan demo Anda..." value={form.message} onChange={handleChange} />
                                 {errors.message && <div className="text-red-500 text-xs mt-1">{errors.message}</div>}
                             </section>
 
                             {/* Submit */}
                             <section className="pt-8">
-                                <div className="text-center space-y-3">
+                                <div className="text-center space-y-2">
                                     <button
                                         type="submit"
                                         disabled={loading}
@@ -251,7 +251,7 @@ export default function RequestDemoPage() {
                                             <>Submit Message</>
                                         )}
                                     </button>
-                                    <p className="text-sm text-gray-500">Tim kami akan menghubungi Anda dalam 24 jam untuk konfirmasi jadwal demo.</p>
+                                    <p className="text-xs pt-4 text-gray-500 max-w-md mx-auto">Tim kami akan menghubungi Anda dalam 24 jam untuk konfirmasi jadwal demo.</p>
                                 </div>
                             </section>
                         </form>

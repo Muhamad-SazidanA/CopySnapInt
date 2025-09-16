@@ -1,5 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import Template from "../layout/Template";
+import AdminTemplate from "../layout/AdminTemplate";
+import RequireAuth from "../components/RequireAuth";
 import Dashboard from "../pages/Dashboard";
 
 import Finance from "../pages/users/Solusi/Finance";
@@ -10,6 +12,10 @@ import ContactUsPage from "../pages/users/ContactUsPage";
 import RequestDemoPage from "../pages/RequestDemoPage";
 import BlogPage from "../pages/users/BlogPage";
 import CaseStudiesPage from "../pages/users/CaseStudiesPage";
+import AdminDashboard from "../pages/admins/AdminDashboard";
+import AdminBlog from "../pages/admins/AdminBlog";
+import AdminCaseStudy from "../pages/admins/AdminCaseStudy";
+import LoginPage from "../pages/LoginPage";
 
 export const router = createBrowserRouter([
     {
@@ -74,5 +80,30 @@ export const router = createBrowserRouter([
             },
         ],
     },
-
+    {
+        path: "/admin",
+        element: (
+            <RequireAuth>
+                <AdminTemplate />
+            </RequireAuth>
+        ),
+        children: [
+            {
+                path: "dashboardadmin",
+                element: <AdminDashboard />,
+            },
+            {
+                path: "blog",
+                element: <AdminBlog />,
+            },
+            {
+                path: "casestudy",
+                element: <AdminCaseStudy />,
+            },
+        ],
+    },
+    {
+        path: "login",
+        element: <LoginPage />,
+    },
 ]);

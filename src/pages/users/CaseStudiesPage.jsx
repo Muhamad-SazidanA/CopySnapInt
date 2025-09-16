@@ -16,14 +16,13 @@ export default function CaseStudiesPage() {
     const handleDemoClick = () => {
         navigate('/demo');
     };
-
     return (
         <div className="bg-white text-gray-900">
             {/* Hero - Case Studies (inlined) */}
-            <section className="bg-gradient-to-br from-green-50 to-blue-100 py-20 sm:py-24">
+            <section className="bg-gradient-to-br from-green-50 to-blue-100 py-20 sm:py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
-                        <div className="inline-flex items-center mb-6 px-4 py-2 text-sm bg-blue-50 text-gray-700 rounded-lg">
+                        <div className="inline-flex items-center mb-12 px-6 py-3 text-sm bg-blue-50 text-gray-700 rounded-lg">
                             <FileText className="w-4 h-4 mr-2 text-[#133E68]" />
                             <span className="font-semibold">Case Studies</span>
                         </div>
@@ -60,7 +59,6 @@ export default function CaseStudiesPage() {
                             </a>
                         </div>
                     </article>
-
                     {/* Prudential */}
                     <article className="rounded-2xl border border-gray-100 hover:border-gray-200 transition shadow-sm overflow-hidden bg-white flex flex-col">
                         <div className="h-44 rounded-xl border border-blue-100 bg-gradient-to-br from-blue-50 to-fuchsia-50 flex items-center justify-center">
@@ -82,7 +80,6 @@ export default function CaseStudiesPage() {
                             </a>
                         </div>
                     </article>
-
                     {/* Unilever */}
                     <article className="rounded-2xl border border-gray-100 hover:border-gray-200 transition shadow-sm overflow-hidden bg-white flex flex-col">
                         <div className="h-44 rounded-xl border border-blue-100 bg-gradient-to-br from-blue-50 to-fuchsia-50 flex items-center justify-center">
@@ -104,7 +101,6 @@ export default function CaseStudiesPage() {
                             </a>
                         </div>
                     </article>
-
                     {/* JNE */}
                     <article className="rounded-2xl border border-gray-100 hover:border-gray-200 transition shadow-sm overflow-hidden bg-white flex flex-col">
                         <div className="h-44 rounded-xl border border-blue-100 bg-gradient-to-br from-blue-50 to-fuchsia-50 flex items-center justify-center">
@@ -126,7 +122,6 @@ export default function CaseStudiesPage() {
                             </a>
                         </div>
                     </article>
-
                     {/* Siloam */}
                     <article className="rounded-2xl border border-gray-100 hover:border-gray-200 transition shadow-sm overflow-hidden bg-white flex flex-col">
                         <div className="h-44 rounded-xl border border-blue-100 bg-gradient-to-br from-blue-50 to-fuchsia-50 flex items-center justify-center">
@@ -148,7 +143,6 @@ export default function CaseStudiesPage() {
                             </a>
                         </div>
                     </article>
-
                     {/* Universitas Indonesia */}
                     <article className="rounded-2xl border border-gray-100 hover:border-gray-200 transition shadow-sm overflow-hidden bg-white flex flex-col">
                         <div className="h-44 rounded-xl border border-blue-100 bg-gradient-to-br from-blue-50 to-fuchsia-50 flex items-center justify-center">
@@ -171,7 +165,6 @@ export default function CaseStudiesPage() {
                         </div>
                     </article>
                 </div>
-
                 {/* CTA Section */}
                 <section className="py-12 sm:py-16">
                     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { FaHome, FaBullhorn, FaFileAlt, FaFolder, FaCog, FaSignOutAlt } from "react-icons/fa";
-import { FaTachometerAlt, FaCalendarAlt, FaFolderOpen, FaBell, FaUserCircle, FaRobot, FaChartPie } from 'react-icons/fa';
+import { FaTachometerAlt, FaCalendarAlt, FaFolderOpen, FaBell, FaUserCircle, FaChartPie } from 'react-icons/fa';
 
 export default function AdminTemplate() {
     const [, setActiveMenu] = useState("Dashboard");
@@ -20,7 +20,6 @@ export default function AdminTemplate() {
     const menus = [
         { name: "Dashboard", icon: <FaChartPie />, path: "/admin/dashboardadmin" },
         { name: "Blog", icon: <FaBullhorn />, path: "/admin/blog" },
-        { name: "Event", icon: <FaCalendarAlt />, path: "/admin/events" },
         { name: "Case Study", icon: <FaFolderOpen />, path: "/admin/casestudy" },
     ];
 
@@ -28,14 +27,13 @@ export default function AdminTemplate() {
         <div className="flex min-h-screen">
             {/* Sidebar */}
             <aside className="w-60 bg-[#F0F7FF] p-4 flex flex-col">
-                <div className="flex justify-center items-center gap-3 mb-8 mt-6">
-                    <div className="rounded-full bg-primary-100 p-2">
-                        <FaRobot size={26} className="text-primary-800" />
-                    </div>
-                    <div>
-                        <span className="text-2xl font-bold">Manusia AI</span>
-                        <div className="text-xs text-gray-500">Admin Portal</div>
-                    </div>
+                <div className="flex flex-col items-center gap-2 mb-8 mt-6">
+                    <img
+                        src="/images/LogoSnapint.png"
+                        alt="Snapint"
+                        className="h-7 object-contain"
+                    />
+                    <div className="text-xs text-gray-500">Admin Portal</div>
                 </div>
                 <nav className="flex flex-col gap-1">
                     {menus.map((item, i) => (

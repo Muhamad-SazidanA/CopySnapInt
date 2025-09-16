@@ -1,6 +1,4 @@
 import React from 'react';
-
-// Contact Us page – placeholder matching design pattern (Images 2)
 export default function ContactUsPage() {
     return (
         <div className="bg-white text-gray-900">
@@ -14,17 +12,14 @@ export default function ContactUsPage() {
                             </div>
                         </div>
                     </div>
-
                     <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-black">Contact Us</h1>
                     <p className="mt-4 text-lg text-slate-600">Get in touch with our sales and support team</p>
-
                     {/* Notice card */}
                     <div className="mt-10">
                         <div className="mx-auto max-w-4xl bg-slate-50 border border-slate-200 rounded-2xl p-8 text-slate-600">
                             This page is under development and will be available soon.
                         </div>
                     </div>
-
                     {/* Inline links */}
                     <div className="mt-10 text-slate-600">
                         <p>In the meantime, you can:</p>

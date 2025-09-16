@@ -6,14 +6,13 @@ export default function HumanResource() {
     const handleDemoClick = () => {
         window.location.href = '/demo';
     };
-
     return (
         <div className="bg-white text-gray-900">
             {/* Hero Section */}
-            <section className="bg-gradient-to-br from-green-50 to-blue-100 py-24">
+            <section className="bg-gradient-to-br from-green-50 to-blue-100 py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <div className="inline-flex items-center mb-6 px-4 py-2 text-sm bg-blue-50 text-gray-700 rounded-lg">
+                        <div className="inline-flex items-center mb-12 px-6 py-3 text-sm bg-blue-50 text-gray-700 rounded-lg">
                             <Users className="w-4 h-4 mr-2 text-[#133E68]" />
                             <span className="font-semibold">Human Resource Solutions</span>
                         </div>
@@ -36,7 +35,6 @@ export default function HumanResource() {
                     </div>
                 </div>
             </section>
-
             {/* Title above sections */}
             <section className="py-12 font-inter">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -48,7 +46,6 @@ export default function HumanResource() {
                     </h2>
                 </div>
             </section>
-
             {/* Inline sections */}
             <div className="font-inter">
                 {/* 1. Employee Onboarding automation */}
@@ -75,7 +72,6 @@ export default function HumanResource() {
                         </div>
                     </div>
                 </section>
-
                 {/* 2. Payroll Reconciliation (image left) */}
                 <section className="py-12">
                     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -100,7 +96,6 @@ export default function HumanResource() {
                         </div>
                     </div>
                 </section>
-
                 {/* 3. Leave & Attendance Management */}
                 <section className="py-12">
                     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -125,7 +120,6 @@ export default function HumanResource() {
                         </div>
                     </div>
                 </section>
-
                 {/* 4. Expense Management (reusing) image left */}
                 <section className="py-12">
                     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -150,7 +144,6 @@ export default function HumanResource() {
                         </div>
                     </div>
                 </section>
-
                 {/* 5. HR Analytics & Reporting */}
                 <section className="py-12">
                     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -176,7 +169,6 @@ export default function HumanResource() {
                     </div>
                 </section>
             </div>
-
             {/* CTA Section */}
             <section className="py-16">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 font-inter">
